@@ -5,7 +5,7 @@ User panel is used to upload paper and idea for the event.
 
 ## Preview
 
-(http://padmasoft.padmaacademy.com/technovision2k19/userpanel.png)
+![alt text](http://padmasoft.padmaacademy.com/technovision2k19/userpanel.png)
 
 **[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)**
 
