@@ -77,10 +77,10 @@
                   </div>
                   <form class="user" action="login.php" method="POST">
                     <div class="form-group">
-                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                     </div>
                     
                     <div class="row justify-content-center">
@@ -93,7 +93,16 @@
                     </div>
                     </div>
                   </form>
-                  <hr>
+            
+                  <div class="col-lg-12">
+                   <div class="row justify-content-center">
+                    
+                    <a href="../index.php" class="btn btn-success" style="border-radius:50px;">
+                      Back(Technovision 2K19)
+                    </a>
+                    </div>
+                    
+                    </div>
                 </div>
                 </div>
                 </div>

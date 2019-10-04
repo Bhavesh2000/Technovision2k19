@@ -14,6 +14,14 @@ require_once('accounts/settings.php');
             $sel="SELECT * FROM students WHERE email='$username' AND pass='$pass';";
             $e_sel=mysqli_query($sql,$sel);
             $row=mysqli_num_rows($e_sel);
+            if($username=="")
+            {
+                echo '<script>alert("Please enter all the details");</script>';
+            }
+            if($pass=="")
+            {
+                echo '<script>alert("Please enter all the details");</script>';
+            }
             if($row==0)
             {
                     $_SESSION['email']="fail";
@@ -79,10 +87,10 @@ require_once('accounts/settings.php');
                   </div>
                   <form class="user" action="login.php" method="POST">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                     </div>
                     
                     <div class="row justify-content-center">
@@ -104,6 +112,16 @@ require_once('accounts/settings.php');
                   <div class="text-center">
                     <a class="small" href="register.php">Create an Account!</a>
                   </div>
+                  <hr>
+                  <div class="col-lg-12">
+                   <div class="row justify-content-center">
+                    
+                    <a href="../index.php" class="btn btn-success" style="border-radius:50px;">
+                      Back(Technovision 2K19)
+                    </a>
+                    </div>
+                    
+                    </div>
                   </div>
                 </div>
                 </div>

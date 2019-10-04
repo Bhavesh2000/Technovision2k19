@@ -48,12 +48,12 @@
 
 <body>
     <?php
-            if(isset($_SESSION['del']))
+            if(isset($_SESSION['del_p']))
             {
-                if($_SESSION['del']=='success')
+                if($_SESSION['del_p']=='success')
                 {
                     echo "<script>alert('File Deleted successfully');</script>";
-                    unset($_SESSION['submitted']);
+                    unset($_SESSION['del_p']);
                 }
             }
     ?>
@@ -165,21 +165,10 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
- 
-<!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Page level plugin JavaScript-->
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="vendor/datatables/jquery.dataTables.js"></script>
   <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin.min.js"></script>
 
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>

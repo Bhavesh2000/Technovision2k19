@@ -111,7 +111,7 @@
               
         <div class="text-center">
         <a  name="download" href="idea_submitted.php?file_id=<?php echo $files['id'] ?>" class="btn btn-primary">Download File</a>
-        <a class="btn btn-danger" Onclick="return ConfirmDelete()" href="del_paper.php?email=<?php echo $files['email']; ?>&id=<?php echo $files['id'] ?>">Delete Paper</a></div>
+        <a class="btn btn-danger" Onclick="return ConfirmDelete()" href="del_idea.php?email=<?php echo $files['email']; ?>&id=<?php echo $files['id']; ?>">Delete idea</a></div>
         <script>
             function ConfirmDelete() {
                return confirm("Are you sure you want to delete?");
@@ -170,21 +170,10 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
- 
-<!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Page level plugin JavaScript-->
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="vendor/datatables/jquery.dataTables.js"></script>
   <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin.min.js"></script>
 
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>

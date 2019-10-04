@@ -117,19 +117,19 @@ require_once('accounts/settings.php');
               <form class="user" action="register.php" method="post" >
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" name="name" class="form-control form-control-user" id="exampleFirstName" placeholder="Name">
+                    <input type="text" name="name" class="form-control form-control-user" id="exampleFirstName" placeholder="Name" required>
                   </div>
                   <div class="col-sm-6">
-                    <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                    <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address" required>
                   </div>
                 </div>
                 
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="password" name="pass"  class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                    <input type="password" name="pass"  class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" name="repass" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                    <input type="password" name="repass" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password" required>
                   </div>
                 </div>
                 <div class="row justify-content-center">
@@ -147,6 +147,16 @@ require_once('accounts/settings.php');
               <div class="text-center">
                 <a class="small" href="login.php">Already have an account? Login!</a>
               </div>
+              <hr>
+                  <div class="col-lg-12">
+                   <div class="row justify-content-center">
+                    
+                    <a href="../index.php" class="btn btn-success" style="border-radius:50px;">
+                      Back(Technovision 2K19)
+                    </a>
+                    </div>
+                    
+                    </div>
               </div>
               </div>
             </div>

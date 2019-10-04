@@ -5,6 +5,11 @@
         header('location:login.php');
         exit();
     }
+    if(!isset($_SESSION['logina']))
+    {
+        header('location:index.php');
+        exit();
+    }
     include("filesLogic.php");
     include("accept.php");
     include("reject.php");

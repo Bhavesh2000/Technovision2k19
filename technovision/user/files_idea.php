@@ -23,9 +23,9 @@ if (isset($_POST['save'])) {
     $size = $_FILES['myfile']['size'];
 
     if (!in_array($extension, ['zip', 'pdf', 'docx','doc'])) {
-        echo "You file extension must be .pdf or .docx";
+        echo '<script>alert("You file extension must be .pdf or .docx")</script>';
     } elseif ($_FILES['myfile']['size'] > 100000000) { // file shouldn't be larger than 1Megabyte
-        echo "File too large!";
+        echo '<script>alert("File too large!")</script>';
     } else {
         
         if (move_uploaded_file($file, $destination)) {
@@ -38,7 +38,7 @@ if (isset($_POST['save'])) {
             
         } 
         else {
-            echo "Failed to upload file.";
+            echo '<script>alert("Failed to upload file.")</script>';
         }
     }
 }

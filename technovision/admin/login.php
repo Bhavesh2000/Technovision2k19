@@ -12,6 +12,18 @@
             $sel="SELECT * FROM admin WHERE user='$username' AND pass='$pass';";
             $e_sel=mysqli_query($sql,$sel);
             $row=mysqli_fetch_array($e_sel);
+            if($_POST['username']=="")
+            {
+                //echo '<script>alert("Please enter Username");</script>';
+                $_SESSION['empty']='usname';
+                header('Location:login.php');
+            }
+            if($_POST['password']=="")
+            {
+                //echo '<script>alert("Please enter Password");</script>';
+                $_SESSION['empty']='pas';
+                header('Location:login.php');
+            }
             if($row['user']==$username && $row['pass']==$pass)
             {
                     $_SESSION['username']=$username;
@@ -47,6 +59,20 @@
 
 <body class="p-3 mb-2 bg-light text-dark">
     <?php
+            if(isset($_SESSION['empty']))
+            {
+                if($_SESSION['empty']=='usname')
+                {
+                    echo '<script>alert("Please enter Username");</script>';
+                    unset($_SESSION['empty']);
+                }
+                if($_SESSION['empty']=='pas')
+                {
+                    echo '<script>alert("Please enter Password");</script>';
+                    unset($_SESSION['empty']);
+                }
+            }
+    
             if(isset($_SESSION['username']))
             {
                 if($_SESSION['username']=='fail')
@@ -55,6 +81,7 @@
                     unset($_SESSION['username']);
                 }
             }
+            
         
     ?>
     
@@ -77,10 +104,10 @@
                   </div>
                   <form class="user" action="login.php" method="POST">
                     <div class="form-group">
-                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                     </div>
                     
                     <div class="row justify-content-center">

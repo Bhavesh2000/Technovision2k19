@@ -103,7 +103,7 @@
                   </div>
                   <form class="user" action="forgot-password.php" method="post">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter your Email Address..." required>
                     </div>
                     <button name="submit" class="btn btn-primary btn-user btn-block">
                       Reset Password
@@ -116,6 +116,16 @@
                   <div class="text-center">
                     <a class="small" href="login.php">Already have an account? Login!</a>
                   </div>
+                  <hr>
+                  <div class="col-lg-12">
+                   <div class="row justify-content-center">
+                    
+                    <a href="../index.php" class="btn btn-success" style="border-radius:50px;">
+                      Back(Technovision 2K19)
+                    </a>
+                    </div>
+                    
+                    </div>
                 </div>
               </div>
             </div>

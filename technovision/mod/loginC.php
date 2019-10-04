@@ -79,14 +79,14 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Login Moderator - Group C</h1>
                   </div>
                   <form class="user" action="loginC.php" method="POST">
                     <div class="form-group">
-                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="text" name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Username" required>
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                     </div>
                     
                     <div class="row justify-content-center">
@@ -94,12 +94,21 @@
                     <button name="submit" class="btn btn-primary btn-user btn-block">
                       Login
                     </button>
-                    <hr>
+                    
                     
                     </div>
                     </div>
                   </form>
                   <hr>
+                  <div class="col-lg-12">
+                   <div class="row justify-content-center">
+                    
+                    <a href="../index.php" class="btn btn-success" style="border-radius:50px;">
+                      Back(Technovision 2K19)
+                    </a>
+                    </div>
+                    
+                    </div>
                 </div>
                 </div>
                 </div>

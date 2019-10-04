@@ -5,9 +5,14 @@
         header('location:login.php');
         exit();
     }
-    include("filesLogic.php");
-    include("accept.php");
-    include("reject.php");
+    if(!isset($_SESSION['logini']))
+    {
+        header('location:index.php');
+        exit();
+    }
+    include("files_idea.php");
+    include("accept_idea.php");
+    include("reject_idea.php");
 ?>
 <?php  
 	include("conn.php");
@@ -81,7 +86,7 @@
                   <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Accepted Paper</div>
+            Rejected Idea</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

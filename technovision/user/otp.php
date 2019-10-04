@@ -88,7 +88,7 @@
                   </div>
                   <form class="user" action="otp.php" method="post">
                     <div class="form-group">
-                      <input type="text" name="otp" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="text" name="otp" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter OTP..." required>
                     </div>
                     <input name="email" value="<?php echo $email;?>" hidden>
                     <button name="submit" class="btn btn-primary btn-user btn-block">

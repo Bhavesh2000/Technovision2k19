@@ -35,7 +35,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Paper Submission</title>
+  <title>Idea Submission</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -48,12 +48,12 @@
 
 <body>
     <?php
-            if(isset($_SESSION['del']))
+            if(isset($_SESSION['del_i']))
             {
-                if($_SESSION['del']=='success')
+                if($_SESSION['del_i']=='success')
                 {
                     echo "<script>alert('File Deleted successfully');</script>";
-                    unset($_SESSION['submitted']);
+                    unset($_SESSION['del_i']);
                 }
             }
     ?>
@@ -84,7 +84,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Paper Submission</h1>
+            <h1 class="h3 mb-0 text-gray-800">Idea Submission</h1>
           
         
             
@@ -160,26 +160,14 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
- 
-<!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Page level plugin JavaScript-->
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="vendor/datatables/jquery.dataTables.js"></script>
   <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin.min.js"></script>
-
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>
-
 
 </body>
 
