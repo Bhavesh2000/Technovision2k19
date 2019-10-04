@@ -7,7 +7,16 @@
 ## How to run it on localhost
 Frist go to localhost/phpmyadmin/ and create data base name as 'padmaiyp_techfest2k19' then import the padmaiyp_techfest.sql file in phpmyadmin.
 Then go to file name as "conn.php" then insert your "Username" and "Password" of your phpmyadmin.
+### File path of conn.php
+-	technovision/conn.php
+-	technovision/admin/conn.php
+-	technovision/mod/conn.php
+-	technovision/user/conn.php
+-	technovision/user/accounts/conn.php
+
+## Google login changes
 For google login do changes in - technovision/user/accounts/settings.php
+
 
 ## Google Login Instruction
 1) Go to Google API Console : https://console.developers.google.com/
@@ -23,13 +32,7 @@ For google login do changes in - technovision/user/accounts/settings.php
 11) Run index.php in the browser
 
 For more information visit the tutorial : http://usefulangle.com/post/9/google-login-api-with-php-curl
- 
-### File path of conn.php
--	technovision/conn.php
--	technovision/admin/conn.php
--	technovision/mod/conn.php
--	technovision/user/conn.php
--	technovision/user/accounts/conn.php
+
 
 ## Hosted At
 
